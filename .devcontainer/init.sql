@@ -16,7 +16,7 @@ CREATE DATABASE "BookDB"; -- Change
 \c BookDB; -- Change
 
 DROP TABLE IF EXISTS "book"; -- Change
-CREATE TABLE "something" ( -- Change
+CREATE TABLE "book" ( -- Change
     "id" SERIAL,
     "author" VARCHAR(100) NOT NULL, -- Change
     "title" VARCHAR(100) NOT NULL, -- Change
