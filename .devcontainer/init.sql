@@ -10,19 +10,19 @@ is something that should be unique about your entity.
 In the example above, that could be `author`.
 */
 
-DROP DATABASE IF EXISTS "SomethingDB"; -- Change
-CREATE DATABASE "SomethingDB"; -- Change
+DROP DATABASE IF EXISTS "BookDB"; -- Change
+CREATE DATABASE "BookDB"; -- Change
 
-\c SomethingDB; -- Change
+\c BookDB; -- Change
 
-DROP TABLE IF EXISTS "something"; -- Change
+DROP TABLE IF EXISTS "book"; -- Change
 CREATE TABLE "something" ( -- Change
     "id" SERIAL,
-    "attribute1" VARCHAR(100) NOT NULL, -- Change
-    "attribute2" VARCHAR(100) NOT NULL, -- Change
+    "author" VARCHAR(100) NOT NULL, -- Change
+    "title" VARCHAR(100) NOT NULL, -- Change
 
-    CONSTRAINT "pk_something_id" -- Change
+    CONSTRAINT "pk_book_id" -- Change
         PRIMARY KEY ("id"),
-    CONSTRAINT "uq_something_attribute1" -- Change
-        UNIQUE ("attribute1") -- Change
+    CONSTRAINT "uq_book_author" -- Change
+        UNIQUE ("author") -- Change
 );
